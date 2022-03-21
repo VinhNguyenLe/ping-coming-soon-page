@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+:root{
+    /* ### Primary */
+    --blue: hsl(223, 87%, 63%);
+    /* ### Secondary */
+    --light-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    /* ### Neutral */
+    --gray: hsl(0, 0%, 59%);
+    --dark-blue: hsl(209, 33%, 12%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 680px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.logo{
+    margin: 80px 0 50px;
+}
+
+h1{
+    font-weight: 300;
+    font-size: 50px;
+    color: var(--gray);
+    margin-bottom: 24px;
+}
+
+h1 span{
+    font-weight: 700;
+    color: var(--dark-blue);
+}
+
+.subscribe{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 40px;
+}
+
+.dashboard{
+    width: 100%;
+}
+
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 93px;
+}
+
+.form-input{
+    width: 66%;
+    position: relative;
+}
+
+input{
+    width: 100%;
+    padding: 20px 30px;
+    border-radius: 30px;
+    font-size: 18px;
+    outline: none;
+    border: 1px solid var(--gray);
+}
+
+input:focus{
+    border: 1px solid var(--blue);
+}
+
+button{
+    width: 31%;
+    font-size: 18px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    color: #fff;
+    background-color: var(--blue);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 65px;
+}
+
+button:hover{
+    background-color: rgba(79, 125, 243, 0.8);
+}
+
+.error-msg{
+    font-style: italic;
+    color: var(--light-red);
+    margin-top: 8px;
+}
+
+.socials{
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-item{
+    margin: 8px;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid var(--light-blue);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.social-item i{
+    width: 20px;
+    color: var(--blue);
+}
+
+.social-item:hover{
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+}
+
+.social-item:hover i{
+    color: #fff;
+}
+
+.notify{
+    color: var(--gray);
+    margin-bottom: 30px;
+}
+
+footer{
+    text-align: center;
+    padding: 12px 24px;
+}
+
+footer a{
+    color: var(--blue);
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+.hide{
+    display: none;
+}
+
+.error-border{
+    border: 1px solid var(--light-red);
+}

@@ -1,0 +1,19 @@
+@media (max-width: 680px) {
+    .container{
+        padding: 0 24px;
+    }
+
+    .form-control{
+        flex-direction: column;
+    }
+
+    .form-input{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    button{
+        width: 100%;
+        padding: 20px;
+    }
+}
